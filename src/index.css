@@ -1,46 +1,51 @@
-html{
+html {
   scroll-behavior: smooth;
 }
-*{
-  font-family: Source Code Pro, Arial, Helvetica, sans-serif;
-  color:aliceblue;
+* {
+  font-family:
+    Source Code Pro,
+    Arial,
+    Helvetica,
+    sans-serif;
+  color: aliceblue;
   box-sizing: border-box;
 }
-body{
-  background-color:#001829;
-  margin:0;
-  padding:0;
-  width:100%;
-  height:auto;
-  overflow-x:hidden;
+body {
+  background-color: #001829;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
 }
-img{
+img {
   user-select: none;
 }
-.card{
-  border:1px solid rgb(53, 51, 51);
-  border-radius:10px;
+.card {
+  border: 2px solid#4eaa9e;
+  border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.364);
-  padding:20px;
-  margin:10px;
+  padding: 20px;
+  margin: 10px;
   text-align: center;
-  max-width:250px;
-  display:inline-block;
+  max-width: 250px;
+  display: inline-block;
+  background: rgba(0, 10, 20, 0.6);
 }
-.card .card-image{
-  max-width:60%;
-  height:auto;
+.card .card-image {
+  max-width: 60%;
+  height: auto;
   border-radius: 50%;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
-.card .card-title{
-  color:rgb(52, 52, 52);
+.card .card-title {
+  color: #faf031;
 }
-.card .card-text{
-  color:rgb(55, 55, 55);
+.card .card-text {
+  color: white;
 }
-.card .card-source{
-  color:aliceblue;
+.card .card-source {
+  color: aliceblue;
 }
 #intro {
   display: flex;
@@ -49,12 +54,12 @@ img{
   gap: 20px;
   padding: 10px 50px;
   min-height: calc(100vh - 80px);
-  background-image: url('./assets/symbol-scatter-haikei.svg');
+  background-image: url("./assets/symbol-scatter-haikei.svg");
   background-size: cover;
 }
 
-#intro h1{
-  color:#faf031;
+#intro h1 {
+  color: #faf031;
   text-decoration: underline;
 }
 
@@ -69,7 +74,7 @@ img{
   border-radius: 16px;
   padding: 28px;
   max-width: 540px;
-  animation: slideDown 2s cubic-bezier(0.16,1,0.3,1) both;
+  animation: slideDown 2s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 #intro-text {
@@ -118,106 +123,110 @@ img{
 
 #intro-img {
   flex-shrink: 0;
-  animation: slideDown 2s cubic-bezier(0.16,1,0.3,1) both;
+  animation: slideDown 2s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 #intro-img img {
-  user-select:none;
+  user-select: none;
   width: 380px;
   height: 480px;
   object-fit: cover;
   object-position: top;
   border-radius: 30px;
   border: 4px solid #715df2;
-  box-shadow: 0 0 30px rgba(113, 93, 242, 0.4);
+  box-shadow: 0 0 20px rgba(113, 93, 242);
 }
-header{
+header {
   user-select: none;
-  position:sticky;
-  top:10px;
-  display:flex;
-  z-index:1000;
-  justify-content:space-between;
-  align-items:center;
+  position: sticky;
+  top: 10px;
+  display: flex;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
   padding: 0.8rem 2rem;
   background-color: #715df250;
   backdrop-filter: blur(10px);
-  margin:10px;
+  margin: 10px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.364);
-  border: 1px solid #353333;
-  border-radius:15px;
-  animation: slideDown 2s cubic-bezier(0.16,1,0.3,1) both;
-
+  border: 5px solid #4eaa9e;
+  border-radius: 15px;
+  animation: slideDown 2s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
-header h1{
-  font-size:1.5rem;
+header h1 {
+  font-size: 1.5rem;
   color: aliceblue;
-  font-style:italic;
+  font-style: italic;
 }
-header ul{
-  display:flex;
-  list-style:none;
+header ul {
+  display: flex;
+  list-style: none;
   align-items: center;
-  gap:20px;
+  gap: 20px;
 }
-header ul li a{
-  position:relative;
-  display:inline-block;
+header ul li a {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
-  color:aliceblue;
+  color: aliceblue;
   padding-bottom: 3px;
   transition: color 0.25s ease;
 }
-header ul li a::after{
-  content:'';
+header ul li a::after {
+  content: "";
   position: absolute;
   bottom: 0;
-  left:0;
-  width:0;
-  height:2px;
-  background:#faf031;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #faf031;
   border-radius: 2px;
-  transition: width 0.3s cubic-bezier(0.4,0,0.2,1);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-header ul li a:hover{
-  color:#faf031;
+header ul li a:hover {
+  color: #faf031;
 }
-header ul li a:hover::after{
-  width:100%;
+header ul li a:hover::after {
+  width: 100%;
 }
-header button{
+header button {
   background-color: #faf031;
-  color:#001829;
-  border:none;
+  color: #001829;
+  border: none;
   padding: 8px 16px;
-  border-radius:8px;
+  border-radius: 8px;
   font-weight: bold;
-  cursor:pointer;
- }
+  cursor: pointer;
+}
 
-header button:hover{
+header button:hover {
   background-color: #c8bd2a;
 }
-#list{
-  background-color: none ;
+#list {
+  background-color: none;
 }
-#list ul{
+#list ul {
   display: flex;
   align-items: center;
   list-style: none;
-  gap:40px;
+  gap: 40px;
 }
-@keyframes slideDown{
-  from{
+#project {
+  background-image: url("./assets/layered-waves-haikei.svg");
+  background-size: cover;
+}
+
+@keyframes slideDown {
+  from {
     transform: translateY(-100%);
-    opacity:0;
+    opacity: 0;
   }
-  to{
+  to {
     transform: translateY(0);
     opacity: 1;
   }
 }
-::selection{
-  color:#001829;
-  background:#faf031;
+::selection {
+  color: #001829;
+  background: #faf031;
 }
