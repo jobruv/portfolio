@@ -1,5 +1,9 @@
 import Card from "./Card.jsx";
 import translations from "./translations.jsx";
+import sketch from "./assets/sketch.webp";
+import fearofai from "./assets/projects/fearofai.webp";
+import honeysource from "./assets/projects/honeysource.webp";
+import kolektif from "./assets/projects/kolektif.webp";
 
 function Project({ lang }) {
   const t = translations[lang].projects;
@@ -8,7 +12,7 @@ function Project({ lang }) {
     <div id="project">
       <Card
         lang={lang}
-        imgUrl="src/assets/sketch.webp"
+        imgUrl={sketch}
         title={t.portfolio.title}
         text={t.portfolio.text}
         isOpenSource={true}
@@ -16,7 +20,7 @@ function Project({ lang }) {
       />
       <Card
         lang={lang}
-        imgUrl="src/assets/projects/kolektif.webp"
+        imgUrl={kolektif}
         title={t.kolektif.title}
         text={t.kolektif.text}
         isOpenSource={true}
@@ -24,7 +28,7 @@ function Project({ lang }) {
       />
       <Card
         lang={lang}
-        imgUrl="src/assets/projects/fearofai.webp"
+        imgUrl={fearofai}
         title={t.fearofai.title}
         text={t.fearofai.text}
         isOpenSource={true}
@@ -32,7 +36,7 @@ function Project({ lang }) {
       />
       <Card
         lang={lang}
-        imgUrl="src/assets/projects/honeysource.webp"
+        imgUrl={honeysource}
         title={t.honeysource.title}
         text={t.honeysource.text}
         isOpenSource={true}
