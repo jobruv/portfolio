@@ -36,6 +36,11 @@ const certificates = [
     issuer: "Ataşehir Fenerbahçe",
     date: "2016-2017",
   },
+  {
+    title: "7th d’MUN Junior Conference",
+    issuer: "Doğa Schools",
+    date: "2016",
+  },
 ];
 
 function Certificates({ lang }) {
