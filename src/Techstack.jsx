@@ -1,3 +1,5 @@
+import translations from "./translations.jsx";
+
 const techstack = [
   {
     id: 1,
@@ -39,18 +41,20 @@ const techstack = [
   },
 ];
 
-function Techstack() {
+function Techstack({ lang }) {
+  const t = translations[lang].techstack;
+
   return (
     <section id="techstack">
       <h2 className="section-title" style={{ textDecoration: "underline" }}>
-        Tech Stack
+        {t.heading}
       </h2>
       <div className="tech-grid">
         {techstack.map((tech) => (
           <div className="tech-card" key={tech.id}>
             <div className="tech-card-header">
               <span className="tech-icon">{tech.icon}</span>
-              <h3 className="tech-category">{tech.category}</h3>
+              <h3 className="tech-category">{t.categories[tech.category]}</h3>
             </div>
             <div className="tech-items">
               {tech.items.map((item, i) => (

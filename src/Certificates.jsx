@@ -1,3 +1,5 @@
+import translations from "./translations.jsx";
+
 const certificates = [
   {
     title: "Green Software Practitioner",
@@ -36,16 +38,12 @@ const certificates = [
   },
 ];
 
-function Certificates() {
+function Certificates({ lang }) {
+  const t = translations[lang].certificates;
+
   return (
     <section id="certificates">
-      <h2
-        style={{
-          textDecoration: "underline",
-        }}
-      >
-        Certificates & Achievements
-      </h2>
+      <h2 style={{ textDecoration: "underline" }}>{t.heading}</h2>
       <p
         style={{
           color: "rgba(240, 248, 255, 0.75)",
@@ -54,8 +52,7 @@ function Certificates() {
           textAlign: "center",
         }}
       >
-        i like to educate myself and learn new things whether its certificated
-        or not
+        {t.subtext}
       </p>
       <div className="cert-grid">
         {certificates.map((cert, i) => (

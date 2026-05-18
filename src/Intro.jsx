@@ -1,33 +1,25 @@
-import React from "react";
 import photo from "./assets/meandyou.webp";
-function Intro() {
+import translations from "./translations.jsx";
+
+function Intro({ lang }) {
+  const t = translations[lang].intro;
   const email = "serenauzumcu@protonmail.com";
+
   const handleCopy = () => {
     navigator.clipboard.writeText(email).then(() => {
-      alert("Email copied to clipboard");
+      alert(t.emailCopied);
     });
   };
+
   return (
     <div id="intro">
       <div id="intro-info">
-        <h1>Computer Programming Student</h1>
-        <p id="intro-text">
-          I am a computer programmer with a focus on{" "}
-          <b>
-            <i>backend technologies and data analytics</i>
-          </b>
-          . Outside of coding, I spend a lot of my time learning about
-          astrophysics, how new technologies impact our world, or working on
-          video editing. I am also a big fan of movies, video games and shows
-          which is where I find a lot of my inspiration.
-        </p>
-        <h3>
-          Interested in these topics and my work?{" "}
-          <u>Feel free to contact me.</u>
-        </h3>
+        <h1>{t.title}</h1>
+        <p id="intro-text">{t.bio}</p>
+        <h3>{t.contactPrompt}</h3>
         <div id="intro-contact">
           <p>
-            GitHub:{" "}
+            {t.github}:{" "}
             <a
               href="https://github.com/jobruv"
               target="_blank"
@@ -37,13 +29,13 @@ function Intro() {
             </a>
           </p>
           <p>
-            Email:{" "}
+            {t.email}:{" "}
             <span id="copyEmail" onClick={handleCopy}>
-              serenauzumcu [at] protonmail (dot) com{" "}
+              serenauzumcu [at] protonmail (dot) com
             </span>
           </p>
           <p>
-            LinkedIn:{" "}
+            {t.linkedin}:{" "}
             <a
               href="https://www.linkedin.com/in/serena-%C3%BCz%C3%BCmc%C3%BC-b92382395/"
               target="_blank"
@@ -53,14 +45,15 @@ function Intro() {
             </a>
           </p>
           <p style={{ textAlign: "right" }}>
-            <i style={{ color: "grey" }}>drawn by @delfin.doodles</i>
+            <i style={{ color: "grey" }}>{t.drawnBy}</i>
           </p>
         </div>
       </div>
       <div id="intro-img">
-        <img src={photo}></img>
+        <img src={photo} alt="profile" />
       </div>
     </div>
   );
 }
+
 export default Intro;
