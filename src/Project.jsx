@@ -20,6 +20,14 @@ function Project({ lang }) {
       />
       <Card
         lang={lang}
+        imgUrl={t.eibwebsite.imgUrl}
+        title={t.eibwebsite.title}
+        text={t.eibwebsite.text}
+        isOpenSource={true}
+        link="https://github.com/jobruv/EIB-Website"
+      />
+      <Card
+        lang={lang}
         imgUrl={kolektif}
         title={t.kolektif.title}
         text={t.kolektif.text}

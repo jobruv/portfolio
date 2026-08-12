@@ -52,6 +52,11 @@ const translations = {
         title: "This Portfolio Website",
         text: "Basically what you are viewing right now. I used React library and some dev tools to help with visualization. Check out my Github README for tools.",
       },
+      //start from here
+      eibwebsite: {
+        title: "EIB Website",
+        text: "An internship project I made during my time at EIB. Did quality of life updates and gave my own spin to the website. Implemented using Spring Boot. Afterwards did a static website using a template but it's not open source so I didn't include it here.",
+      },
       kolektif: {
         title: "Collective Health System",
         text: "Our project, implemented using Javascript and Java Spring Boot, offers a web solution to provide access to healthy food for financially disadvantaged groups.",
@@ -123,6 +128,11 @@ const translations = {
       portfolio: {
         title: "Bu Portfolyo Sitesi",
         text: "Şu an baktığınız şey bu. React kütüphanesi ve bazı geliştirici araçları kullandım. Araçlar için Github README'me göz at.",
+      },
+      //start from here
+      eibwebsite: {
+        title: "EIB Website",
+        text: "EIB'de geçirdiğim süre boyunca yaptığım bir staj projesi. Yaşam kalitesi güncellemeleri yaptım ve siteye kendi yorumumu kattım. Spring Boot kullanılarak uygulandı. Sonrasında bir şablon kullanarak statik bir web sitesi yaptım ama açık kaynak değil, bu yüzden buraya eklemedim.",
       },
       kolektif: {
         title: "Kolektif Sağlık Sistemi",

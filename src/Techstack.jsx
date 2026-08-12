@@ -31,7 +31,7 @@ const techstack = [
     id: 4,
     category: "Tools",
     icon: "⚙",
-    items: ["Git", "Excel"],
+    items: ["Git", "Docker" ,"Excel"],
   },
   {
     id: 5,
