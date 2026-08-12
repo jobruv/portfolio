@@ -4,6 +4,7 @@ import sketch from "./assets/sketch.webp";
 import fearofai from "./assets/projects/fearofai.webp";
 import honeysource from "./assets/projects/honeysource.webp";
 import kolektif from "./assets/projects/kolektif.webp";
+import eibwebsite from "./assets/projects/eib-website.webp";
 
 function Project({ lang }) {
   const t = translations[lang].projects;
@@ -20,7 +21,7 @@ function Project({ lang }) {
       />
       <Card
         lang={lang}
-        imgUrl={t.eibwebsite.imgUrl}
+        imgUrl={eibwebsite}
         title={t.eibwebsite.title}
         text={t.eibwebsite.text}
         isOpenSource={true}
