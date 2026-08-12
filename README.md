@@ -1,11 +1,26 @@
 # My Portfolio
 
-Wanted to give React a try and I didn't feel like I used it in its full potential. The most benefit I got was the file management which was so refreshing and made HTML/CSS/JS fun somehow... Originally I was planning on going for an old indie web design like they do in Neocities but I don't have that much creativity so I had to scratch that.
+My first experience with React. Thanks to @delfin.doodles for letting me use her art in my portfolio.
+
+<img src="public/portfolio.png">
 
 ## Sites I used
 
-https://haikei.app/ for apps
+https://haikei.app/ for background image
 
 https://delphi.tools/ almost everything
 
 claude for helping with my design mistakes and translations to Turkish.
+
+## Rough Notes for the future
+<ul>
+    <li>Rewriting "about me"</li>
+    <li>Third party blog without updating the code itself</li>
+        <ul>
+            <li>Coding</li>
+            <li>Editing</li>
+            <li>Books (goodreads widget works too)</li>
+            <li>Platforms I am on etc.</li>
+        </ul>
+    <li>Tools I use for language learning</li>
+</ul>
