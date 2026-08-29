@@ -17,6 +17,11 @@ function Header({ lang, setLang }) {
           <li>
             <a href="#project">{t.projects}</a>
           </li>
+          <li>
+            <button onClick={() => setLang(lang === "en" ? "tr" : "en")}>
+              {lang === "en" ? "Türkçe" : "English"}
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
